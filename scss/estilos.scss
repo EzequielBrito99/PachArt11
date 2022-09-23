@@ -1,0 +1,314 @@
+//-------------------------
+// PATRON DE COLORES
+//-------------------------
+$texto:#111111;
+$principal:#12AFAF;
+$secundario:#009500;
+
+//------------------------
+// CREANDO FUENTES
+//------------------------
+@font-face {
+    font-family: "Open sans R400, san serif";
+    src: url("../fonts/static/OpenSans/OpenSans-Regular.ttf");
+    font-weight: 400;
+}
+@font-face {
+    font-family: "Open sans B700, san serif";
+    src: url("../fonts/static/OpenSans/OpenSans-Bold.ttf");
+    font-weight: 700;
+}
+@font-face {
+    font-family: "Open sans BI700, san serif";
+    src: url("../fonts/static/OpenSans/OpenSans-BoldItalic.ttf");
+    font-weight: 700;
+    font-style: italic;
+}
+
+//-------------------------
+//Estilos principales
+//-------------------------
+html{
+    font-size: 15px;
+}
+
+body{
+    color: $texto;
+    font-family: "Open sans R400, san serif";
+}
+
+
+
+.bienvenidos{
+    background: url("../img/fondoMovil.jpg") no-repeat center;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100vh;
+
+    .texto-encabezado{
+        color: #fff;
+        margin-top: 4rem;
+        position: relative;
+
+        .display-4{
+            margin-top: 2rem;
+        }
+    }
+
+    .flecha-bajar a{
+        display: inline-block;
+        color: #fff;
+        font-size: 4rem;
+        animation: flecha-animada 2s ease-in-out infinite;
+        -webkit-animation: flecha-animada 2s ease-in-out infinite;
+        flex: 0 1 auto;
+    }
+    @keyframes flecha-animada{
+        from{
+            transform: translateY(0);
+            -webkit-transform: translateY(0);
+            -moz-transform: translateY(0);
+            -ms-transform: translateY(0);
+            -o-transform: translateY(0);
+        }
+        50%{
+            transform: translateY(6px);
+            -webkit-transform: translateY(6px);
+            -moz-transform: translateY(6px);
+            -ms-transform: translateY(6px);
+            -o-transform: translateY(6px);
+        }
+        to{
+            transform: translateY(0);
+            -webkit-transform: translateY(0);
+            -moz-transform: translateY(0);
+            -ms-transform: translateY(0);
+            -o-transform: translateY(0);
+        }
+    }
+}
+.bienvenidos .encabezado{
+    height: 4rem;
+    background-color: rgb(31, 29, 28);
+
+    .container{
+        height: 100%;
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        position: relative;
+    }
+
+    .boton-menu{
+        margin: 0;
+        padding: 0 .5rem;
+        background: transparent;
+        color: #fff;
+        border: 0;
+        font-size: 2rem;
+    }
+
+    #Menu-principal{
+        flex: 1 1 100%;
+    }
+    #Menu-principal ul{
+        padding: 0;
+        list-style: none;
+        margin: 1rem 0 0 0;
+        background: rgb(41, 37, 37);
+    }
+    #Menu-principal ul a{
+        display: block;
+        text-align: center;
+        padding: .8rem 0;
+        color: #fff;
+        text-transform: uppercase;
+        border-top: 1px solid rgb(102, 97, 97);
+        text-decoration: none;
+    }
+
+    a{
+        color: #fff;
+    }
+}
+
+#logo{
+    width: 6rem;
+}
+
+//-------------------------
+//Seccion En Venta
+//-------------------------
+#enVenta article{
+    margin: 1rem 0;
+
+    .btn-success{
+        font-size: 1.2rem;
+    }
+}
+#enVenta .mark{
+    background-color:  rgba(151, 150, 150, 0.671);
+    transform: rotate(90deg);
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    color: rgb(255, 255, 255);
+}
+
+//-------------------------
+//Seccion ultimos proyectos
+//-------------------------
+.ultimos-proyectos{
+    background: rgba(173, 173, 173, 0.473);
+}
+.ultimos-proyectos div h2{
+    margin: 1rem 0 2rem 0;
+}
+.ultimos-proyectos div h4{
+    font-size: 1rem;
+    font-weight: bold;
+    text-align: center;
+    color: $texto;
+}
+.ultimos-proyectos.owl-carousel{
+    display: block !important;
+}
+.ultimos-proyectos .owl-nav{
+    display: flex;
+    justify-content: center;
+    margin: .3rem 0;
+    font-size: 3rem;
+}
+.ultimos-proyectos .owl-prev,
+.ultimos-proyectos .owl-next {
+    margin: 0 .5rem;
+    color: rgb(27, 26, 26)!important;
+    transition: all .5s;
+    -webkit-transition: all .5s;
+    -moz-transition: all .5s;
+    -ms-transition: all .5s;
+    -o-transition: all .5s;
+}
+.ultimos-proyectos .owl-prev:hover,
+.ultimos-proyectos .owl-next:hover {
+    color: rgb(77, 70, 70) !important;
+}
+
+
+
+//-------------------------
+//Seccion Pie de paguina
+//-------------------------
+.piedepaguina{
+    background: $texto;
+    color: #fff;
+    font-size: 1rem;
+}
+.piedepaguina p {
+    opacity: .7;
+}
+.piedepaguina .redes-sociales{
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.piedepaguina .redes-sociales a{
+    color: #fff;
+    font-size: 2rem;
+    margin: 0 .5rem;
+    opacity: .7;
+    transition: all .5s;
+    -webkit-transition: all .5s;
+    -moz-transition: all .5s;
+    -ms-transition: all .5s;
+    -o-transition: all .5s;
+}
+.piedepaguina .redes-sociales a:hover{
+    opacity: 1;
+}
+.ir-arriba{
+    position: fixed;
+    bottom: .5rem;
+    right: 1rem;
+    font-size: 3rem;
+    z-index: 100;
+    color: rgb(95, 92, 92);
+    opacity: .8;
+    line-height: 0;
+    transition: all .3s;
+    -webkit-transition: all .3s;
+    -moz-transition: all .3s;
+    -ms-transition: all .3s;
+    -o-transition: all .3s;
+    display: none;
+}
+.ir-arriba:hover, .ir-arriba:hover {
+    outline: 0;
+    position: fixed;
+    bottom: .5rem;
+    right: 1rem;
+    font-size: 3rem;
+    z-index: 100;
+    color: #fff;
+    opacity: .8;
+}
+
+
+
+
+
+
+//-----------------------------------
+//Estilos Para destock(md o superior)
+//-----------------------------------
+@media (min-width:768px) {
+    #Menu-principal{
+        height: auto !important;
+        display: block;
+    }
+    #Menu-principal ul{
+        display: flex;
+        margin: 0 0 0 0 !important;
+        font-size: .8rem;
+        background: transparent !important;
+    }
+    #Menu-principal ul a{
+        padding: .3rem 0 !important;
+        text-transform: capitalize;
+        margin: 0 .5rem;
+        border-top: 0 !important;
+        //border-bottom: 3px solid transparent !important;
+        transition: all .3s;
+        -webkit-transition: all .3s;
+        -moz-transition: all .3s;
+        -ms-transition: all .3s;
+        -o-transition: all .3s;
+}
+    #Menu-principal ul a:hover{
+        border-bottom: 3px solid #fff;
+    }
+    #Menu-principal ul li.active a{
+        border-bottom: 3px solid #fff;
+    }
+    #Menu-principal{
+        margin-left: auto;
+    }
+}
+
+@media (min-width:992px) {
+    html{
+        font-size: 16px;
+    }
+
+    .bienvenidos{
+        background: url("../img/fondoDestok.jpg") no-repeat center;
+        background-size: cover;
+        background-attachment: fixed;
+    }
+    
+}
