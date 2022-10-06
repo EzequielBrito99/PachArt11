@@ -1,0 +1,280 @@
+@font-face {
+  font-family: "Open sans R400, san serif";
+  src: url("../fonts/static/OpenSans/OpenSans-Regular.ttf");
+  font-weight: 400; }
+@font-face {
+  font-family: "Open sans B700, san serif";
+  src: url("../fonts/static/OpenSans/OpenSans-Bold.ttf");
+  font-weight: 700; }
+@font-face {
+  font-family: "Open sans BI700, san serif";
+  src: url("../fonts/static/OpenSans/OpenSans-BoldItalic.ttf");
+  font-weight: 700;
+  font-style: italic; }
+html {
+  font-size: 15px; }
+
+body {
+  color: #111111;
+  font-family: "Open sans R400, san serif"; }
+
+.bienvenidos {
+  background: url("../img/fondoMovil.jpg") no-repeat center;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 100vh; }
+  .bienvenidos .texto-encabezado {
+    color: #fff;
+    margin-top: 4rem;
+    position: relative; }
+    .bienvenidos .texto-encabezado .display-4 {
+      margin-top: 2rem; }
+  .bienvenidos .flecha-bajar a {
+    display: inline-block;
+    color: #fff;
+    font-size: 4rem;
+    animation: flecha-animada 2s ease-in-out infinite;
+    -webkit-animation: flecha-animada 2s ease-in-out infinite;
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 auto;
+            flex: 0 1 auto; }
+@-webkit-keyframes flecha-animada {
+  from {
+    transform: translateY(0);
+    -webkit-transform: translateY(0);
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -o-transform: translateY(0); }
+  50% {
+    transform: translateY(6px);
+    -webkit-transform: translateY(6px);
+    -moz-transform: translateY(6px);
+    -ms-transform: translateY(6px);
+    -o-transform: translateY(6px); }
+  to {
+    transform: translateY(0);
+    -webkit-transform: translateY(0);
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -o-transform: translateY(0); } }
+@keyframes flecha-animada {
+  from {
+    transform: translateY(0);
+    -webkit-transform: translateY(0);
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -o-transform: translateY(0); }
+  50% {
+    transform: translateY(6px);
+    -webkit-transform: translateY(6px);
+    -moz-transform: translateY(6px);
+    -ms-transform: translateY(6px);
+    -o-transform: translateY(6px); }
+  to {
+    transform: translateY(0);
+    -webkit-transform: translateY(0);
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -o-transform: translateY(0); } }
+.bienvenidos .encabezado {
+  height: 4rem;
+  background-color: #1f1d1c; }
+  .bienvenidos .encabezado .container {
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    align-items: center;
+    position: relative; }
+  .bienvenidos .encabezado .boton-menu {
+    margin: 0;
+    padding: 0 .5rem;
+    background: transparent;
+    color: #fff;
+    border: 0;
+    font-size: 2rem; }
+  .bienvenidos .encabezado #Menu-principal {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 100%;
+            flex: 1 1 100%; }
+  .bienvenidos .encabezado #Menu-principal ul {
+    padding: 0;
+    list-style: none;
+    margin: 1rem 0 0 0;
+    background: #292525; }
+  .bienvenidos .encabezado #Menu-principal ul a {
+    display: block;
+    text-align: center;
+    padding: .8rem 0;
+    color: #fff;
+    text-transform: uppercase;
+    border-top: 1px solid #666161;
+    text-decoration: none; }
+  .bienvenidos .encabezado a {
+    color: #fff; }
+
+#logo {
+  width: 6rem; }
+
+#enVenta article {
+  margin: 1rem 0; }
+  #enVenta article .btn-success {
+    font-size: 1.2rem; }
+
+#enVenta .mark {
+  background-color: rgba(151, 150, 150, 0.671);
+  transform: rotate(90deg);
+  -webkit-transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  -o-transform: rotate(90deg);
+  color: white; }
+
+.ultimos-proyectos {
+  background: rgba(173, 173, 173, 0.473); }
+
+.ultimos-proyectos div h2 {
+  margin: 1rem 0 2rem 0; }
+
+.ultimos-proyectos div h4 {
+  font-size: 1rem;
+  font-weight: bold;
+  text-align: center;
+  color: #111111; }
+
+.ultimos-proyectos.owl-carousel {
+  display: block !important; }
+
+.ultimos-proyectos .owl-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: .3rem 0;
+  font-size: 3rem; }
+
+.ultimos-proyectos .owl-prev,
+.ultimos-proyectos .owl-next {
+  margin: 0 .5rem;
+  color: #1b1a1a !important;
+  transition: all .5s;
+  -webkit-transition: all .5s;
+  -moz-transition: all .5s;
+  -ms-transition: all .5s;
+  -o-transition: all .5s; }
+
+.ultimos-proyectos .owl-prev:hover,
+.ultimos-proyectos .owl-next:hover {
+  color: #4d4646 !important; }
+
+.piedepaguina {
+  background: #111111;
+  color: #fff;
+  font-size: 1rem; }
+
+.piedepaguina p {
+  opacity: .7; }
+
+.piedepaguina .redes-sociales {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  list-style: none;
+  margin: 0;
+  padding: 0; }
+
+.piedepaguina .redes-sociales a {
+  color: #fff;
+  font-size: 2rem;
+  margin: 0 .5rem;
+  opacity: .7;
+  transition: all .5s;
+  -webkit-transition: all .5s;
+  -moz-transition: all .5s;
+  -ms-transition: all .5s;
+  -o-transition: all .5s; }
+
+.piedepaguina .redes-sociales a:hover {
+  opacity: 1; }
+
+.ir-arriba {
+  position: fixed;
+  bottom: .5rem;
+  right: 1rem;
+  font-size: 3rem;
+  z-index: 100;
+  color: #5f5c5c;
+  opacity: .8;
+  line-height: 0;
+  transition: all .3s;
+  -webkit-transition: all .3s;
+  -moz-transition: all .3s;
+  -ms-transition: all .3s;
+  -o-transition: all .3s;
+  display: none; }
+
+.ir-arriba:hover, .ir-arriba:hover {
+  outline: 0;
+  position: fixed;
+  bottom: .5rem;
+  right: 1rem;
+  font-size: 3rem;
+  z-index: 100;
+  color: #fff;
+  opacity: .8; }
+
+@media (min-width: 768px) {
+  #Menu-principal {
+    height: auto !important;
+    display: block; }
+
+  #Menu-principal ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: 0 0 0 0 !important;
+    font-size: .8rem;
+    background: transparent !important; }
+
+  #Menu-principal ul a {
+    padding: .3rem 0 !important;
+    text-transform: capitalize;
+    margin: 0 .5rem;
+    border-top: 0 !important;
+    transition: all .3s;
+    -webkit-transition: all .3s;
+    -moz-transition: all .3s;
+    -ms-transition: all .3s;
+    -o-transition: all .3s; }
+
+  #Menu-principal ul a:hover {
+    border-bottom: 3px solid #fff; }
+
+  #Menu-principal ul li.active a {
+    border-bottom: 3px solid #fff; }
+
+  #Menu-principal {
+    margin-left: auto; } }
+@media (min-width: 992px) {
+  html {
+    font-size: 16px; }
+
+  .bienvenidos {
+    background: url("../img/fondoDestok.jpg") no-repeat center;
+    background-size: cover;
+    background-attachment: fixed; } }
+
+/*# sourceMappingURL=estilos.css.map */

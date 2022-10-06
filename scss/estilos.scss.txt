@@ -1,0 +1,14 @@
+//-------------------------
+// PATRON DE COLORES
+//-------------------------
+$texto:#111111;
+$principal:#12AFAF;
+$secundario:#009500;
+
+html{
+    font-size: 15px;
+}
+
+body{
+    color: $texto;
+}
