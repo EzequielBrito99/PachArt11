@@ -124,22 +124,36 @@ body {
 #logo {
   width: 6rem; }
 
-#enVenta article {
-  margin: 1rem 0; }
-  #enVenta article .btn-success {
-    font-size: 1.2rem; }
+#enVenta {
+  background: rgba(173, 173, 173, 0.2); }
+  #enVenta article {
+    margin: 1rem 0; }
+    #enVenta article .btn-success {
+      font-size: 1.2rem; }
+  #enVenta .mark {
+    background-color: rgba(151, 150, 150, 0.671);
+    transform: rotate(90deg);
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    color: white; }
 
-#enVenta .mark {
-  background-color: rgba(151, 150, 150, 0.671);
-  transform: rotate(90deg);
-  -webkit-transform: rotate(90deg);
-  -moz-transform: rotate(90deg);
-  -ms-transform: rotate(90deg);
-  -o-transform: rotate(90deg);
-  color: white; }
+#vendidas {
+  background-color: rgba(151, 150, 150, 0.4); }
+  #vendidas article {
+    margin: 1rem 0; }
+  #vendidas .mark {
+    background-color: #fdf9f9;
+    transform: rotate(90deg);
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    color: rgba(0, 0, 0, 0.8); }
 
 .ultimos-proyectos {
-  background: rgba(173, 173, 173, 0.473); }
+  background: rgba(173, 173, 173, 0.2); }
 
 .ultimos-proyectos div h2 {
   margin: 1rem 0 2rem 0; }
