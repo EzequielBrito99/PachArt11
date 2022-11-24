@@ -141,28 +141,51 @@ body{
 //-------------------------
 //Seccion En Venta
 //-------------------------
-#enVenta article{
-    margin: 1rem 0;
+#enVenta{
+    background: rgba(173, 173, 173, 0.2);
 
-    .btn-success{
-        font-size: 1.2rem;
+    article{
+        margin: 1rem 0;
+
+        .btn-success{
+            font-size: 1.2rem;
+        }
+    }
+
+    .mark{
+        background-color:  rgba(151, 150, 150, 0.671);
+        transform: rotate(90deg);
+        -webkit-transform: rotate(90deg);
+        -moz-transform: rotate(90deg);
+        -ms-transform: rotate(90deg);
+        -o-transform: rotate(90deg);
+        color: rgb(255, 255, 255);
     }
 }
-#enVenta .mark{
-    background-color:  rgba(151, 150, 150, 0.671);
-    transform: rotate(90deg);
-    -webkit-transform: rotate(90deg);
-    -moz-transform: rotate(90deg);
-    -ms-transform: rotate(90deg);
-    -o-transform: rotate(90deg);
-    color: rgb(255, 255, 255);
+
+#vendidas{
+    background-color: rgba(151, 150, 150, 0.4);
+
+    article{
+        margin: 1rem 0;
+    }
+
+    .mark{
+        background-color:  rgb(253, 249, 249);
+        transform: rotate(90deg);
+        -webkit-transform: rotate(90deg);
+        -moz-transform: rotate(90deg);
+        -ms-transform: rotate(90deg);
+        -o-transform: rotate(90deg);
+        color: rgba(0, 0, 0, .8);
+    }
 }
 
 //-------------------------
 //Seccion ultimos proyectos
 //-------------------------
 .ultimos-proyectos{
-    background: rgba(173, 173, 173, 0.473);
+    background: rgba(173, 173, 173, 0.2);
 }
 .ultimos-proyectos div h2{
     margin: 1rem 0 2rem 0;
