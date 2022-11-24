@@ -40,7 +40,7 @@ body{
 
 
 .bienvenidos{
-    background: url("../img/fondoMovil.jpg") no-repeat center;
+    background: url("../img/portadaMovile.jpg") no-repeat center;
     background-size: cover;
     background-attachment: fixed;
     height: 100vh;
@@ -163,7 +163,7 @@ body{
     }
 }
 
-#vendidas{
+#vendidas, #cartulina{
     background-color: rgba(151, 150, 150, 0.4);
 
     article{
@@ -329,7 +329,7 @@ body{
     }
 
     .bienvenidos{
-        background: url("../img/fondoDestok.jpg") no-repeat center;
+        background: url("../img/portadaDesktop.jpg") no-repeat center;
         background-size: cover;
         background-attachment: fixed;
     }

@@ -19,7 +19,7 @@ body {
   font-family: "Open sans R400, san serif"; }
 
 .bienvenidos {
-  background: url("../img/fondoMovil.jpg") no-repeat center;
+  background: url("../img/portadaMovile.jpg") no-repeat center;
   background-size: cover;
   background-attachment: fixed;
   height: 100vh; }
@@ -139,11 +139,11 @@ body {
     -o-transform: rotate(90deg);
     color: white; }
 
-#vendidas {
+#vendidas, #cartulina {
   background-color: rgba(151, 150, 150, 0.4); }
-  #vendidas article {
+  #vendidas article, #cartulina article {
     margin: 1rem 0; }
-  #vendidas .mark {
+  #vendidas .mark, #cartulina .mark {
     background-color: #fdf9f9;
     transform: rotate(90deg);
     -webkit-transform: rotate(90deg);
@@ -287,7 +287,7 @@ body {
     font-size: 16px; }
 
   .bienvenidos {
-    background: url("../img/fondoDestok.jpg") no-repeat center;
+    background: url("../img/portadaDesktop.jpg") no-repeat center;
     background-size: cover;
     background-attachment: fixed; } }
 
