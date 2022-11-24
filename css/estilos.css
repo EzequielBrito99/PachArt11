@@ -121,6 +121,9 @@ body {
   .bienvenidos .encabezado a {
     color: #fff; }
 
+#logo {
+  width: 6rem; }
+
 #enVenta article {
   margin: 1rem 0; }
   #enVenta article .btn-success {
@@ -242,7 +245,7 @@ body {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    margin: 0;
+    margin: 0 0 0 0 !important;
     font-size: .8rem;
     background: transparent !important; }
 
@@ -271,6 +274,7 @@ body {
 
   .bienvenidos {
     background: url("../img/fondoDestok.jpg") no-repeat center;
-    background-size: cover; } }
+    background-size: cover;
+    background-attachment: fixed; } }
 
 /*# sourceMappingURL=estilos.css.map */
